@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane prefHeight="554.0" prefWidth="910.0" style="-fx-background-color: #CCFFBF;">
+            <children>
+                <HBox prefHeight="70.0" prefWidth="927.0" style="-fx-background-color: #24B300;">
+                    <children>
+                        <VBox prefHeight="70.0" prefWidth="170.0" style="-fx-border-color: #000000;">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="36.0" prefWidth="169.0" text="Berhayat" textFill="#1c4aa6">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="169.0" text="Ambulans Servisi" textFill="#1c4aa6">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <Button fx:id="anasayfaBtn" mnemonicParsing="false" onAction="#handleAnasayfa" prefHeight="48.0" prefWidth="117.0" text="ANASAYFA">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="20.0" top="10.0" />
+                            </HBox.margin></Button>
+                        <Button fx:id="kurumsalBtn" mnemonicParsing="false" onAction="#handleKurumsal" prefHeight="48.0" prefWidth="117.0" text="KURUMSAL">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="sorularBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSorular" prefHeight="48.0" prefWidth="145.0" text="SIK SORULAN SORULAR">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="iletisimBtn" mnemonicParsing="false" onAction="#handleIletisim" prefHeight="48.0" prefWidth="117.0" text="İLETİŞİM">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="girisBtn" mnemonicParsing="false" onAction="#handleGiris" prefHeight="48.0" prefWidth="117.0" text="GİRİS">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            <VBox layoutX="24.0" layoutY="94.0" prefHeight="166.0" prefWidth="275.0" style="-fx-background-color: #D2F1D2;">
+               <children>
+                  <HBox prefHeight="52.0" prefWidth="275.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="66.0" prefWidth="66.0" style="-fx-background-radius: 80; -fx-background-color: #000000;" text="1" textFill="WHITE">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="58.0" prefWidth="211.0" text="Salgın hastalıklara karşı güvenli mi?">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="Tüm araçlarımız siz hastalarımızın sağlığı için" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="düzenli olarak sterilize edilerek en iyi şekilde" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="güvenliği sağlamaktayız. Personellerimizin özel " />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="kıyafetleri her iki tarafıda huzurlu hissettirmektedir." />
+               </children>
+            </VBox>
+            <VBox layoutX="24.0" layoutY="285.0" prefHeight="210.0" prefWidth="275.0" style="-fx-background-color: #D2F1D2;">
+               <children>
+                  <HBox prefHeight="52.0" prefWidth="275.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="66.0" prefWidth="66.0" style="-fx-background-radius: 80; -fx-background-color: #000000;" text="2" textFill="WHITE">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="58.0" prefWidth="211.0" text="Hasta nakil ambulansları nasıldır?">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="Hasta Nakil Ambulansları içinde stabilize edilmiş" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="olan bir hastanın güvenli olarak taşınabileceği " />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="kadar tıbbi cihaz bulunan ve en az bir sağlık " />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="personelinin hastaya eşlik etmesi gereken " />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="275.0" text="ambulans tipleridir. Hasta Nakil Ambulansları " />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="275.0" text="mavi şeritlidirler." />
+               </children>
+            </VBox>
+            <VBox layoutX="332.0" layoutY="94.0" prefHeight="351.0" prefWidth="282.0" style="-fx-background-color: #D2F1D2;">
+               <children>
+                  <HBox prefHeight="52.0" prefWidth="275.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="66.0" prefWidth="66.0" style="-fx-background-radius: 80; -fx-background-color: #000000;" text="3" textFill="WHITE">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="58.0" prefWidth="211.0" text="Acil yardım ambulansları nasıldır?">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="Yönetmeliğe göre kara ambulansları iki tiptir: Hasta" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="Yardım Ambulansları ve Hasta Nakil Ambulansları. " />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="Acil Yardım Ambulansları daha üst donanıma sahip" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="380.0" text="olup içinde doktor olan bir ekip ile hareket eden ve" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="297.0" text="her türlü acil vakaya müdahale edebilme yetenekteki" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="275.0" text="ambulanslardır. Acil Yardım Ambulansları kırmızı" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="310.0" text="şeritlidirler. Genelde müdahale gerektiren hastaların" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="310.0" text="sağlık kuruluşlarına sevklerinde kullanılır. Acil yardım" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="310.0" text="Ambulansıyla sevk gerektiren durumlar uluslararası" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="310.0" text="32 parametreyle belirtilmiştir. " />
+               </children>
+            </VBox>
+            <ImageView fitHeight="296.0" fitWidth="260.0" layoutX="644.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/soru.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

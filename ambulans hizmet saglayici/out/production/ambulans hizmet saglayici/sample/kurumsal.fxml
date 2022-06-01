@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane prefHeight="554.0" prefWidth="910.0" style="-fx-background-color: #CCFFBF;">
+            <children>
+                <HBox prefHeight="70.0" prefWidth="927.0" style="-fx-background-color: #24B300;">
+                    <children>
+                        <VBox prefHeight="70.0" prefWidth="170.0" style="-fx-border-color: #000000;">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="36.0" prefWidth="169.0" text="Berhayat" textFill="#1c4aa6">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="169.0" text="Ambulans Servisi" textFill="#1c4aa6">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <Button fx:id="anasayfaBtn" mnemonicParsing="false" onAction="#handleAnasayfa" prefHeight="48.0" prefWidth="117.0" text="ANASAYFA">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="20.0" top="10.0" />
+                            </HBox.margin></Button>
+                        <Button fx:id="kurumsalBtn" mnemonicParsing="false" onAction="#handleKurumsal" prefHeight="48.0" prefWidth="117.0" text="KURUMSAL">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="sorularBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSorular" prefHeight="48.0" prefWidth="145.0" text="SIK SORULAN SORULAR">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="iletisimBtn" mnemonicParsing="false" onAction="#handleIletisim" prefHeight="48.0" prefWidth="117.0" text="İLETİŞİM">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="girisBtn" mnemonicParsing="false" onAction="#handleGiris" prefHeight="48.0" prefWidth="117.0" text="GİRİS">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            <HBox layoutX="14.0" layoutY="86.0" prefHeight="210.0" prefWidth="400.0">
+               <children>
+                  <VBox prefHeight="210.0" prefWidth="203.0" style="-fx-background-color: #D2F1D2;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="100.0" text="Vizyonumuz">
+                           <VBox.margin>
+                              <Insets left="35.0" right="35.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="211.0" text="Sunduğumuz sağlık hizmetleriyle" />
+                        <Label prefHeight="20.0" prefWidth="217.0" text="hasta ve hasta yakınlarının " />
+                        <Label prefHeight="20.0" prefWidth="211.0" text="memnuniyetini sağlamayı, ekibi ve" />
+                        <Label prefHeight="20.0" prefWidth="211.0" text="altyapısıyla, Türkiye'ye model " />
+                        <Label prefHeight="20.0" prefWidth="211.0" text="oluşturmayı, dünyada referans " />
+                        <Label text="gösterilen ambulans servisleriden" />
+                        <Label prefHeight="18.0" prefWidth="242.0" text="biri olmayı hedeflemektedir." />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="210.0" prefWidth="202.0" style="-fx-background-color: #D2F1D2;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="100.0" text="Misyonumuz">
+                           <VBox.margin>
+                              <Insets left="35.0" right="35.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="237.0" text="* İnsana değer veririz, güvenilir" />
+                        <Label prefHeight="20.0" prefWidth="234.0" text=" olmak vazgeçilmezimizdir. " />
+                        <Label prefHeight="20.0" prefWidth="224.0" text="* Dinamik, çözüm odaklı bir takımız." />
+                        <Label prefHeight="20.0" prefWidth="222.0" text="* Etik ilkelerimiz ve iş ahlakına" />
+                        <Label prefHeight="20.0" prefWidth="222.0" text=" önem veririz. " />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox layoutX="447.0" layoutY="137.0" prefHeight="178.0" prefWidth="460.0" style="-fx-background-color: #D2F1D2;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="442.0" text="Hakkımızda" underline="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label prefHeight="20.0" prefWidth="484.0" text="Berhayat Ambulans olarak genç ve dinamik; alanında uzman kadrosu ile özel ambulans" />
+                  <Label prefHeight="20.0" prefWidth="474.0" text="sektörünün içerisindeki yerini sunduğu kaliteli hizmetler ile her geçen gün biraz daha" />
+                  <Label prefHeight="20.0" prefWidth="478.0" text="sağlamlaştırmaktadır. Yaptığımız işin ciddiyetinin farkındayız, hızlı ve iyi hizmet için" />
+                  <Label prefHeight="20.0" prefWidth="468.0" text="kendimizi geliştiriyoruz. Açık ücret politikamızla sürprizle karşılaşmadan en iyi kalite" />
+                  <Label prefHeight="20.0" prefWidth="464.0" text="hizmeti vermek için elimizden geleni yapıyoruz." />
+               </children>
+            </VBox>
+            <VBox layoutX="470.0" layoutY="365.0" prefHeight="112.0" prefWidth="414.0" style="-fx-background-color: #D2F1D2;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="31.0" prefWidth="380.0" text="Biz Kimiz?">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="480.0" text="19.04.2021 tarihinden beri gerekli tüm planlamamızla yola çıkıp bu planlarımzı" />
+                  <Label prefHeight="20.0" prefWidth="567.0" text="olabildiğince en iyi şekilde gerçekleştirmeye çalışan bir takımız. Sizlere olan" />
+                  <Label prefHeight="20.0" prefWidth="546.0" text="sözlerimizi en yerinde ve en tatmin edici biçimde gerçekleştiriyoruz." />
+               </children>
+            </VBox>
+            <ImageView fitHeight="210.0" fitWidth="327.0" layoutX="87.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/kurumsal.jpg" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

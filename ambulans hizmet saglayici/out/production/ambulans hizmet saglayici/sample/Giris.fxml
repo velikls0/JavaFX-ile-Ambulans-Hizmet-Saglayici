@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane prefHeight="554.0" prefWidth="910.0" style="-fx-background-color: #CCFFBF;">
+            <children>
+                <HBox prefHeight="70.0" prefWidth="927.0" style="-fx-background-color: #24B300;">
+                    <children>
+                        <VBox prefHeight="70.0" prefWidth="170.0" style="-fx-border-color: #000000;">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="36.0" prefWidth="169.0" text="Berhayat" textFill="#1c4aa6">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="169.0" text="Ambulans Servisi" textFill="#1c4aa6">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <Button fx:id="anasayfaBtn" mnemonicParsing="false" onAction="#handleAnasayfa" prefHeight="48.0" prefWidth="117.0" text="ANASAYFA">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="20.0" top="10.0" />
+                            </HBox.margin></Button>
+                        <Button fx:id="kurumsalBtn" mnemonicParsing="false" onAction="#handleKurumsal" prefHeight="48.0" prefWidth="117.0" text="KURUMSAL">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="sorularBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSorular" prefHeight="48.0" prefWidth="145.0" text="SIK SORULAN SORULAR">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="iletisimBtn" mnemonicParsing="false" onAction="#handleIletisim" prefHeight="48.0" prefWidth="117.0" text="İLETİŞİM">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="girisBtn" mnemonicParsing="false" onAction="#handleGiris" prefHeight="48.0" prefWidth="117.0" text="GİRİS">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            <VBox layoutX="22.0" layoutY="88.0" prefHeight="431.0" prefWidth="534.0" style="-fx-background-color: #D2F1D2;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="475.0" style="-fx-background-color: #D2F1D2;" text="KAYIT">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="425.6929016113281" endY="-1.000061273574829" startX="-108.00001525878906" startY="-1.0000076293945312" />
+                  <TextField fx:id="isim" prefHeight="34.0" prefWidth="344.0" promptText="İsim-Soyisim" style="-fx-background-color: #E8E8E8; -fx-background-radius: 80;">
+                     <padding>
+                        <Insets bottom="5.0" left="30.0" top="5.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="tel" prefHeight="34.0" prefWidth="344.0" promptText="Telefon No" style="-fx-background-color: #E8E8E8; -fx-background-radius: 80;">
+                     <padding>
+                        <Insets bottom="5.0" left="30.0" top="5.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="yas" prefHeight="34.0" prefWidth="344.0" promptText="Yaşı" style="-fx-background-color: #E8E8E8; -fx-background-radius: 80;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="hasta" prefHeight="34.0" prefWidth="344.0" promptText="Rahatsızlığı" style="-fx-background-color: #E8E8E8; -fx-background-radius: 80;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="adres" prefHeight="73.0" prefWidth="393.0" promptText="ADRES" style="-fx-background-color: #E8E8E8; -fx-background-radius: 80;">
+                     <padding>
+                        <Insets bottom="5.0" left="30.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="kayitBtn" mnemonicParsing="false" onAction="#kayıt" prefHeight="26.0" prefWidth="70.0" style="-fx-background-radius: 80; -fx-background-color: #E8E8E8;" text="Kayıt">
+                     <VBox.margin>
+                        <Insets left="390.0" top="40.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

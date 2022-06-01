@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane prefHeight="554.0" prefWidth="910.0" style="-fx-background-color: #CCFFBF;">
+            <children>
+                <HBox prefHeight="70.0" prefWidth="927.0" style="-fx-background-color: #24B300;">
+                    <children>
+                        <VBox prefHeight="70.0" prefWidth="170.0" style="-fx-border-color: #000000;">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="36.0" prefWidth="169.0" text="Berhayat" textFill="#1c4aa6">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="169.0" text="Ambulans Servisi" textFill="#1c4aa6">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <Button fx:id="anasayfaBtn" mnemonicParsing="false" onAction="#handleAnasayfa" prefHeight="48.0" prefWidth="117.0" text="ANASAYFA">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="20.0" top="10.0" />
+                            </HBox.margin></Button>
+                        <Button fx:id="kurumsalBtn" mnemonicParsing="false" onAction="#handleKurumsal" prefHeight="48.0" prefWidth="117.0" text="KURUMSAL">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="sorularBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSorular" prefHeight="48.0" prefWidth="145.0" text="SIK SORULAN SORULAR">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="iletisimBtn" mnemonicParsing="false" onAction="#handleIletisim" prefHeight="48.0" prefWidth="117.0" text="İLETİŞİM">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="girisBtn" mnemonicParsing="false" onAction="#handleGiris" prefHeight="48.0" prefWidth="117.0" text="GİRİS">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="89.0" prefHeight="30.0" prefWidth="475.0" style="-fx-background-color: #D2F1D2;" text="Acil Ambulans Hizmeti">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <VBox layoutX="14.0" layoutY="116.0" prefHeight="315.0" prefWidth="475.0" style="-fx-background-color: #D2F1D2;">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="470.0" text="     Acil Ambulans Hizmetlerinin başlıca hedefleri ve amaçları arasında; hayatı korumak, " />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="470.0" text="beklenmedik tehlikelere karşı koruyucu önlemler almak, tedaviyi hızlandırmak, zamanı" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="470.0" text="doğru ve planlı kullanmak, ilk ve acil yardım hizmetleri sayılmaktadır." />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="470.0" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="497.0" text="Ambulanslarımız uydu üzerinden GPS sistemi ile izlenmektedir. Ambulans ve ekip hastaya" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="487.0" text="ulaştığı zaman ekip doktoru tarafından yapılan ilk muayene sonucunda hastanın yerinde" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="499.0" text="tedavisi mümkünse yapılır. Hastanın ileri tetkik ve tedavisi için hastaneye transfer edilmesi" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="470.0" text="gerekiyor ise, en uygun sağlık kuruluşuna hastanın nakli yapılır." />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="470.0" />
+                  <ImageView fitHeight="127.0" fitWidth="205.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/acilAmb.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="125.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Line endX="367.20001220703125" endY="-0.9999847412109375" layoutX="122.0" layoutY="117.0" startX="-108.00001525878906" startY="-1.0000076293945312" />
+            <Button layoutX="830.0" layoutY="495.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" style="-fx-background-color: #aaaaaa; -fx-background-radius: 90;" text="Geri" textFill="WHITE" />
+            <Button fx:id="hastaBtn" layoutX="868.0" layoutY="495.0" mnemonicParsing="false" onAction="#handleHasta" prefHeight="37.0" prefWidth="37.0" style="-fx-background-color: #000000; -fx-background-radius: 90;" text="İleri" textFill="WHITE" />
+            <VBox layoutX="539.0" layoutY="174.0" prefHeight="200.0" prefWidth="362.0" style="-fx-background-color: #D2F1D2;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="475.0" style="-fx-background-color: #D2F1D2;" text="Kayıt işlemi">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="367.20001220703125" endY="-0.9999847412109375" startX="728.8929443359375" startY="-1.707087755203247" />
+                  <HBox prefHeight="75.0" prefWidth="314.0">
+                     <children>
+                        <Label prefHeight="46.0" prefWidth="98.0" text="Kayıt olmak için " />
+                        <Button fx:id="girisBtn1" mnemonicParsing="false" onAction="#handleGiris" prefHeight="31.0" prefWidth="76.0" text="GİRİS">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label prefHeight="46.0" prefWidth="120.0" text="butonuna basınız.">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" top="35.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

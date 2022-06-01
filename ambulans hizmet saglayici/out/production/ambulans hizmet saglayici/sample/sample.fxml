@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="554.0" prefWidth="910.0" style="-fx-background-color: #CCFFBF;">
+         <children>
+            <HBox prefHeight="70.0" prefWidth="927.0" style="-fx-background-color: #24B300;">
+               <children>
+                  <VBox prefHeight="70.0" prefWidth="170.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="36.0" prefWidth="169.0" text="Berhayat" textFill="#1c4aa6">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="169.0" text="Ambulans Servisi" textFill="#1c4aa6">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button fx:id="anasayfaBtn" mnemonicParsing="false" onAction="#handleAnasayfa" prefHeight="48.0" prefWidth="117.0" text="ANASAYFA">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="kurumsalBtn" mnemonicParsing="false" onAction="#handleKurumsal" prefHeight="48.0" prefWidth="117.0" text="KURUMSAL">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="sorularBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSorular" prefHeight="48.0" prefWidth="145.0" text="SIK SORULAN SORULAR">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="iletisimBtn" mnemonicParsing="false" onAction="#handleIletisim" prefHeight="48.0" prefWidth="117.0" text="İLETİŞİM">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="girisBtn" mnemonicParsing="false" onAction="#handleGiris" prefHeight="48.0" prefWidth="117.0" text="GİRİS">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox layoutX="0.0" layoutY="70.0" prefHeight="484.0" prefWidth="170.0" style="-fx-background-color: #24B300;">
+               <children>
+                  <ImageView fitHeight="78.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/ambulans.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="48.0" top="10.0" />
+                     </VBox.margin></ImageView>
+                  <Button fx:id="acilBtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleAcil" prefHeight="60.0" prefWidth="170.0" text="Acil Ambulans Hizmeti">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/acil.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="hastaBtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleHasta" prefHeight="60.0" prefWidth="170.0" text="Hasta Nakil Hizmeti">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/hasta.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="ucakBtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleUcak" prefHeight="60.0" prefWidth="170.0" text="Uçak Ambulans Hizmeti">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/ucak.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="revirBtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleRevir" prefHeight="60.0" prefWidth="170.0" text="Revir Hizmeti">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/revir.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="evBtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleEv" prefHeight="60.0" prefWidth="170.0" text="Evde Bakım Hizmeti">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/evde.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="ambulansBtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleAmbulans" prefHeight="60.0" prefWidth="170.0" text="Ambulans Kiralama Hizmeti">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/rent.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+               </children></VBox>
+            <VBox layoutX="191.0" layoutY="88.0" prefHeight="152.0" prefWidth="711.0" style="-fx-background-color: #D2F1D2;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="718.0" text="En Zor Anlarınızda Yanınızdayız" underline="true">
+                     <font>
+                        <Font name="Arial" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="225.0" right="225.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="711.0" text="Dünyadaki bütün organizasyonların insanların mutluluğu ve güveni için kurulduğu kaçınılmaz bir gerçektir. Şüphesiz sağlıklı bir insan ">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="711.0" text="mutlu bir insandır. Bu bilinçle BERHAYAT AMBULANS SERVİSİ olarak tüm ihtiyaçlarınızı karşılayacak biçimde hizmet vermekteyiz. Tam">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="711.0" text="donanımlı araçlarımız, uzman doktorlarımız, hemşire, paramedik ve personelimiz ile en zayıf olduğunuz anlarda yanınızdayız.">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <ImageView fitHeight="90.0" fitWidth="206.0" layoutX="191.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/anaAmbulans.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="135.0" fitWidth="206.0" layoutX="191.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/unnamed.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="228.0" fitWidth="482.0" layoutX="420.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/foto.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
